@@ -1,0 +1,2 @@
+#let PAGE_NUMBERING_INTRO = "i"
+#let PAGE_NUMBERING_MAIN  = "1"

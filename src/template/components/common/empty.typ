@@ -1,0 +1,1 @@
+#let Empty = par[#text(size:0.5em)[#h(0.0em)]]
