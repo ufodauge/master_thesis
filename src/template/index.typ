@@ -12,29 +12,35 @@
   mentor         : "皆川 茜",
   mentor-post    : "教授",
   laboratry      : "鐘井研究室",
+  font           : "Harano Aji Mincho",
+  font-strong    : "Harano Aji Gothic",
   date           : datetime.today(),
   abstract       : [],
   acknowledgement: [],
   references     : none,
   body
-) = Route[
-  #CoverSection(
-    title         : title,
-    student-number: student-number,
-    mentor        : mentor,
-    mentor-post   : mentor-post,
-    date          : date,
-    author        : author,
-    laboratry     : laboratry,
-  )
+) = Route(
+  font       : font,
+  font-strong: font-strong,
+  [
+    #CoverSection(
+      title         : title,
+      student-number: student-number,
+      mentor        : mentor,
+      mentor-post   : mentor-post,
+      date          : date,
+      author        : author,
+      laboratry     : laboratry,
+    )
 
-  #IntroSection(
-    abstract       : abstract,
-    acknowledgement: acknowledgement,
-  )
+    #IntroSection(
+      abstract       : abstract,
+      acknowledgement: acknowledgement,
+    )
 
-  #MainSection(
-    references: references,
-    body
-  )
-]
+    #MainSection(
+      references: references,
+      body
+    )
+  ]
+)

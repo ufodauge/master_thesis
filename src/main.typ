@@ -5,17 +5,19 @@
 #import algorithmic         : algorithm
 
 #show: template.with(
-  title          : "卒業論文、修士論文のタイトル",
-  student-number : "22MM305",
-  author         : "安楽岡 花火",
-  mentor         : "山田 敏規",
-  mentor-post    : "准教授",
-  laboratry      : "山田研究室",
-  date           : datetime.today(),
-  references     : bibliography(
+  title         : "卒業論文、修士論文のタイトル",
+  student-number: "22MM305",
+  author        : "安楽岡 花火",
+  mentor        : "山田 敏規",
+  mentor-post   : "准教授",
+  laboratry     : "山田研究室",
+  font          : "Harano Aji Mincho",
+  font-strong   : "Harano Aji Gothic",
+  date          : datetime.today(),
+  references    : bibliography(
     "references/index.bib"
   ),
-  abstract       : [
+  abstract: [
     本研究では、人工知能 (AI) を用いた新しい癌治療法の開発について検討した。具体的には、AI を用いて癌細胞の特定と分類を行い、その情報をもとに標的療法を行うという方法である。
 
     標的療法は、従来の化学療法や放射線療法と比較して、副作用が少なく、より効果的な治療法として期待されている。しかし、癌細胞の種類や分子構造は多様であるため、標的となる分子を特定することが難しいという課題があった。
@@ -65,8 +67,6 @@
 
 構成
 
-// Chapter 1
-// ----------------------------------------------
 
 = 序論
 
@@ -136,8 +136,6 @@ $ a = mat(1, 2; 3, 4) $ <eq1>
 @tbl1 も表示できます。
 
 
-// Chapter 2
-// ----------------------------------------------
 
 = 先行研究
 
@@ -163,8 +161,6 @@ $ a = mat(1, 2; 3, 4) $ <eq1>
 ]をご覧ください
 
 
-// Chapter 3
-// ----------------------------------------------
 
 = 定義
 
